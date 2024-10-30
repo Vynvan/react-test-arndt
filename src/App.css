@@ -6,3 +6,7 @@
   background-color: #303846;
   color: white;
 }
+
+svg {
+  margin-top: -4px;
+}
