@@ -1,3 +1,0 @@
-[*]  # Alle Dateien
-indent_style = space  # Oder "tab" für Tabulatoren
-indent_size = 4       # Größe der Einrückung (z.B. 2 oder 4)
