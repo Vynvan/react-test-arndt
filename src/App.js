@@ -17,7 +17,7 @@ function TodoList() {
     const click = () => setItems([...items, document.getElementById('todo-input').value]);
 
     return (
-        <div className="container hero">
+        <div className="container">
             <div className="m-4 p-2 rounded align-items-center shadow todo">
                 <input type="text" id="todo-input" placeholder="Neue Aufgabe hinzufügen" />
                 <button className="mx-2 btn btn-primary rounded-circle" onClick={click} title="Hinzufügen">
