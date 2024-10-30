@@ -15,11 +15,10 @@ function LikeButton() {
 function TodoList() {
     const [items, setItems] = React.useState([]);
     const click = () => setItems([...items, document.getElementById('todo-input').value]);
-    const styles = { backgroundColor: '#303846', color: 'white' };
 
     return (
         <div className="container hero">
-            <div className="m-4 p-2 rounded align-items-center shadow" style={styles}>
+            <div className="m-4 p-2 rounded align-items-center shadow todo">
                 <input type="text" id="todo-input" placeholder="Neue Aufgabe hinzufügen" />
                 <button className="mx-2 btn btn-primary rounded-circle" onClick={click} title="Hinzufügen">
                     {/* prettier-ignore */}
@@ -33,7 +32,7 @@ function TodoList() {
             </div>
             <ul className="ps-0">
                 {items.map((item, index) => (
-                    <li className="list-unstyled m-4 p-2 rounded align-items-center shadow" style={styles} key={index}>
+                    <li className="list-unstyled m-4 p-2 rounded align-items-center shadow todo" key={index}>
                         {item}
                     </li>
                 ))}
